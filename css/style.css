@@ -559,12 +559,13 @@ header a{
     font-size: 25px;
 }
 .portfolio-left:hover, .portfolio-mid:hover, .portfolio-right:hover {
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
     background-color: #f2f2f2;
+    margin-top: 50px;
 }
 /* portfolio close */
 
