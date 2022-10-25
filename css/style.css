@@ -19,6 +19,8 @@ a{
     background-size: cover;
     position: relative;
 }
+
+
 .content .title{
     color: #ffffff;
     font-size: 15px;
@@ -171,15 +173,15 @@ header a{
     display: none;
 }
 
-/* .header-icons {
-    display: none;
-}
-.main-menu img {
-    display: none;
-} */
-/* Content */
 .black-bar {
     height: auto;
+    width: 60%;
+    background-color: rgb(1, 1, 1, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+}
+.port-bar {
+    height: 60vh;
     width: 60%;
     background-color: rgb(1, 1, 1, 0.7);
     margin-left: auto;
@@ -313,7 +315,6 @@ header a{
 }
 .content-left {
     width: 38%;
-    height: 45vh;
     margin: 5px;
     padding: 5px;
     position: relative;
@@ -388,7 +389,7 @@ header a{
 .service-left, .service-mid, .service-right {
     width: 30%;
     margin: 10px 10px 20px 15px;
-    padding: 10rem 5px;
+    padding: 4rem 5px;
     color: white;
     background-color: #2D2D2D96;
     text-align: center;
@@ -396,8 +397,59 @@ header a{
 .service-left:hover, .service-mid:hover, .service-right:hover {
     background-color: #CF2D1E;
 }
+.service-left i {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(214, 72, 72);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 4rem;
+    border-radius: 3px;
+  }
+.service-left i:hover, .fa-wordpress:hover, .fa-wix:hover, .fa-newspaper:hover, .fa-paintbrush:hover {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 4rem;
+    border-radius: 3px;
+    color: #CF2D1E;
+}
+.service-mid i {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(214, 72, 72);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 4rem;
+    border-radius: 3px;
+}
+.service-right i {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(214, 72, 72);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 4rem;
+    border-radius: 3px;
+  }
+
 .card-container {
     padding-bottom: 5rem;
+}
+.card {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .flex-left, .flex-mid, .flex-right {
     width: 30%;
@@ -427,13 +479,7 @@ header a{
 .cyber-security {
     color: #4682B4;
 }
-img{
-    width: 200px;
-}
-.image-grad {
-    width: 200px;
-    
-}
+
 
 /*-----Testimonial-------*/
 
@@ -475,32 +521,50 @@ img{
 /* Portfolio open */
 .subtitle {
     margin-left: 24px;
-    color: #4682B4;
-    margin-top: 50px;
+    color: #878b8d;
     margin-bottom: 20px;
 }
-.portfolio-left {
-    background-color: #BADA55;
-}
-.portfolio-mid {
-    background-color: #c89f9b;
-}
-.portfolio-right {
-    background-color: #4682B4;
-}
+
 .click-here-left {
-    color: black;
+    color: rgb(209, 205, 205);
+    background-color: #131212;
+    padding: 5px 20px;
+    border-radius: 20px;
 }
 .click-here-left:hover {
     color: rgb(255, 255, 255)
 }
 .click-here-mid {
-    color: rgb(18, 17, 17);
- 
+    color: rgb(209, 205, 205);
+    background-color: #131212;
+    padding: 5px 20px;
+    border-radius: 20px;
 }
 .click-here-mid:hover {
     color: rgb(255, 255, 255);
 
+}
+.click-here-rght {
+    color: rgb(209, 205, 205);
+}
+.click-here-right:hover {
+    color: rgb(255, 255, 255)
+}
+.portfolio-left, .portfolio-mid, .portfolio-right {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-size: 25px;
+}
+.portfolio-left:hover, .portfolio-mid:hover, .portfolio-right:hover {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #f2f2f2;
 }
 /* portfolio close */
 
@@ -519,6 +583,14 @@ img{
     color: white;
     background-color: #2D2D2D96;
 }
+.social {
+    display: flex;
+    flex-direction: column;
+}
+.address-cebu {
+    margin-top: 10px;
+}
+
 .contact-left:hover, .contact-right:hover {
     background-color: #0e0e0e96;
 }
@@ -531,6 +603,23 @@ img{
 }
 .para-margin {
     padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.para-margin i {
+    padding-right: 20px;
+}
+.fa-location-dot {
+    color: rgb(143, 238, 143);
+}
+.fa-users {
+    color: rgb(143, 238, 143);
+}
+.fa-envelope {
+    color: rgb(143, 238, 143);
+}
+.fa-phone {
+    color: rgb(143, 238, 143);
 }
 input[type=text], select, textarea {
     width: 100%;
@@ -561,12 +650,30 @@ input[type=text], select, textarea {
     background-color: #2D2D2D96;
     padding: 20px;
     color: white;
-    width: 60%;
+    width: 98%;
     margin-top: 40px;
   }
-
-
-
+  footer {
+    display: flex;
+    background: rgb(4, 4, 4);
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+  .footer-soc {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: -10px;
+  }
+  .fullname {
+    font-size: 18px;
+  }
+ 
 @media screen and (max-width: 1670px) {
     .black-bar {
         width: 90%;
@@ -580,8 +687,6 @@ input[type=text], select, textarea {
         margin-top: 0px;
     }
 }
-
-
 @media screen and (max-width: 1250px){
     .content-right {
         width: 100%;
@@ -599,6 +704,19 @@ input[type=text], select, textarea {
         width: 100%;
     }
 }
+@media screen and (max-width: 1160px){
+    .service-left i, .service-mid i, .service-right i {
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(214, 72, 72);
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        height: 4rem;
+        border-radius: 3px;
+      }
+}
 @media screen and (max-width: 1150px) {
     .content-left {
         width: 100%;
@@ -608,7 +726,6 @@ input[type=text], select, textarea {
     }
     .experience {
         margin-left: 0px;
-        margin-top: 50px;
     }
     .web-title-resume {
         margin-left: 20px;
@@ -652,9 +769,19 @@ input[type=text], select, textarea {
         text-align: center;
         padding-left: 40px;
     }
-    .container {
-        width: 85%;
-    }
+}
+@media screen and (max-width: 1000px){
+    .service-left i, .service-mid i, .service-right i {
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(214, 72, 72);
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 28%;
+        height: 4rem;
+        border-radius: 3px;
+      }
 }
 @media screen and (max-width: 900px) {
     .service-left, .service-mid, .service-right {
@@ -665,15 +792,8 @@ input[type=text], select, textarea {
         background-color: #2D2D2D96;
         text-align: center;
     }
-    .portfolio-left {
-        background-color: #BADA55;
-    }
-    .portfolio-mid {
-        background-color: #c89f9b;
-    }
-    .portfolio-right {
-        background-color: #4682B4;
-    }
+
+
 }
 @media screen and (max-width: 830px) {
     .service-left, .service-mid, .service-right {
@@ -683,15 +803,6 @@ input[type=text], select, textarea {
         color: white;
         background-color: #2D2D2D96;
         text-align: center;
-    }
-    .portfolio-left {
-        background-color: #BADA55;
-    }
-    .portfolio-mid {
-        background-color: #c89f9b;
-    }
-    .portfolio-right {
-        background-color: #4682B4;
     }
 }
 @media screen and (max-width: 800px) {
@@ -754,29 +865,9 @@ input[type=text], select, textarea {
     }
 }
 
-@media screen and (max-width: 574px) {
-    .content-right-resume {
-        margin-top: 50px;
-    }
-}
 @media screen and (max-width: 500px) {
     .flex-container {
         font-size: 12px;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .content-right-resume {
-        margin-top: 80px;
-    }
-}
-@media screen and (max-width: 360px) {
-    .content-right-resume {
-        margin-top: 120px;
-    }
-}
-@media screen and (max-width: 375px) {
-    .content-right-resume {
-        margin-top: 150px;
-    }
-}
